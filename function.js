@@ -141,6 +141,8 @@ for (let breakFast of breakfast) {
 // styling
 container.style.display ="flex"
 container.style.flexDirection ="column"
+heading.style.color ="#72454d"
+ul.style.color = "rgb(163 114 122)"
 
 
 container.appendChild(heading)
