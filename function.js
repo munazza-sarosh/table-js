@@ -73,11 +73,19 @@ _td3.style.padding = "10px";
 
 tr.style.backgroundColor = "#c2bfbf";
 tr.style.color = "black";
+
+
+td.style.borderRadius ="10px"
+td2.style.borderRadius ="10px"
+td3.style.borderRadius ="10px"
+td4.style.borderRadius ="10px"
+
+
 document.body.style.display = "flex";
-document.body.style.justifyContent = "center";
+document.body.style.justifyContent = "space-evenly";
 document.body.style.alignItems = "center";
 document.body.style.height = "500px";
-table.style.flexDirection = "column"
+// table.style.flexDirection = "column"
 table.style.width = "300px"
 table.style.textTransform = "capitalize"
 // table.style.margin = "100px"
@@ -114,3 +122,27 @@ table.appendChild(tr2)
 table.appendChild(tr3)
 table.appendChild(tr4)
 document.body.appendChild(table)
+
+let container = document.createElement("div")
+let heading = document.createElement("h1")
+heading.innerHTML = "breakfast"
+let breakfast = ["paratha", "boil egg", "chai","half fry"];
+
+let ul = document.createElement("ul");
+
+for (let breakFast of breakfast) {
+    let li = document.createElement("li");
+
+    li.innerHTML = breakFast;
+
+    ul.appendChild(li);
+}
+
+// styling
+container.style.display ="flex"
+container.style.flexDirection ="column"
+
+
+container.appendChild(heading)
+container.appendChild(ul);
+document.body.appendChild(container)
